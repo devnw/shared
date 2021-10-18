@@ -7,8 +7,8 @@ group:
         dest: .github/dependabot.yml
 
     # GitHub Sponsors config
-      - source: configs/FUNDING
-        dest: .github/FUNDING
+      - source: configs/FUNDING.yml
+        dest: .github/FUNDING.yml
 
     # GitHub OWNERS & COC
       - source: configs/CODE_OF_CONDUCT.md
