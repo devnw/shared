@@ -1,8 +1,4 @@
 group:
-  repos: |
-      devnw/atomizer
-      devnw/alog
-      
   # dependabot workflow
   - files:
       - source: workflows/dependencies/auto-merge-deps.yml
@@ -11,30 +7,28 @@ group:
         dest: .github/dependabot.yml
 
   # GitHub Sponsors config
-  - files:
       - source: configs/FUNDING.yml
         dest: .github/FUNDING.yml
 
   # GitHub OWNERS & COC
-  - files:
       - source: configs/CODE_OF_CONDUCT.md
         dest: .github/CODE_OF_CONDUCT.md
       - source: configs/CODEOWNERS
         dest: .github/CODEOWNERS
 
   # Github Releases
-  - files:
       - source: workflows/release/release.yml
         dest: .github/workflows/release.yml
       - source: workflows/configs/release-config.json
         dest: release-config.json
 
   # Default GO lint/build workflows
-  - files:
       - source: workflows/go/
         dest: .github/workflows/
 
   # LICENSE
-  - files:
       - source: LICENSE
         dest: LICENSE
+   repos: |
+       devnw/atomizer
+       devnw/alog
