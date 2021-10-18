@@ -19,7 +19,7 @@ group:
     # Github Releases
       - source: workflows/release/release.yml
         dest: .github/workflows/release.yml
-      - source: workflows/configs/release-config.json
+      - source: configs/release-config.json
         dest: release-config.json
 
     # Default GO lint/build workflows
