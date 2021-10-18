@@ -32,3 +32,4 @@ group:
     repos: |
         devnw/atomizer
         devnw/alog
+        devnw/oss-template
