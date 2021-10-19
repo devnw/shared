@@ -16,6 +16,7 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
           CONFIG_PATH: sync.yml
           ASSIGNEES: benjivesterby
+          COMMIT_EACH_FILE: false
           PR_LABELS: |
             sharedfiles
             workflows
