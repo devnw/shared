@@ -30,6 +30,52 @@ group:
       - source: LICENSE
         dest: LICENSE
     repos: |
-        devnw/atomizer
         devnw/alog
+        devnw/validator
+        devnw/ttl
         devnw/oss-template
+        devnw/graph
+        devnw/graph-cli
+        devnw/syncer
+        devnw/atomizer
+        devnw/amqp
+        devnw/montecarlopi
+        devnw/atomizer-test-console
+        devnw/atomizer-test-agent
+        devnw/atomizer-cmd
+        devnw/atomizer-base
+        devnw/synapse
+        devnw/scheduler
+        devnw/atominer
+
+# LINT CONFIG (DEFAULT)
+group:
+  - files:
+      - source: configs/.golangci.yml
+        dest: .golangci.yml
+    repos: |
+        devnw/alog
+        devnw/validator
+        devnw/ttl
+        devnw/oss-template
+        devnw/graph
+        devnw/graph-cli
+        devnw/syncer
+        devnw/atomizer
+        devnw/amqp
+        devnw/montecarlopi
+        devnw/atomizer-test-console
+        devnw/atomizer-test-agent
+        devnw/atomizer-cmd
+        devnw/atomizer-base
+        devnw/synapse
+        devnw/scheduler
+        devnw/atominer
+
+# LINT CONFIG (LESS STRICT)
+group:
+  - files:
+      - source: configs/less_strict_golangcilint.yml
+        dest: .golangci.yml
+    repos: |
+        devnw/bridgekeeper
