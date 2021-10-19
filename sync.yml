@@ -49,7 +49,6 @@ group:
         devnw/atominer
 
 # LINT CONFIG (DEFAULT)
-group:
   - files:
       - source: configs/.golangci.yml
         dest: .golangci.yml
@@ -73,7 +72,6 @@ group:
         devnw/atominer
 
 # LINT CONFIG (LESS STRICT)
-group:
   - files:
       - source: configs/less_strict_golangcilint.yml
         dest: .golangci.yml
