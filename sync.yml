@@ -32,6 +32,7 @@ group:
     repos: |
         devnw/alog
         devnw/validator
+        devnw/bridgekeeper
         devnw/ttl
         devnw/oss-template
         devnw/graph
