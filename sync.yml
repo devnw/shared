@@ -22,6 +22,10 @@ group:
       - source: configs/release-config.json
         dest: release-config.json
 
+    # Shared File Merging
+      - source: workflows/other/automerge.yml
+        dest: .github/workflows/automerge.yml
+
     # Default GO lint/build workflows
       - source: workflows/go/
         dest: .github/workflows/
