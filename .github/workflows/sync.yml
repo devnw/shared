@@ -18,8 +18,4 @@ jobs:
           ASSIGNEES: benjivesterby
           COMMIT_EACH_FILE: false
           PR_LABELS: |
-            shared
-            workflows
-            configs
-            license
             automerge
