@@ -1,8 +1,9 @@
 group:
   # dependabot workflow
   - files:
-      - source: workflows/dependencies/auto_merge_deps.yml
-        dest: .github/workflows/auto_merge_deps.yml
+      # removing in place of automerge
+      # - source: workflows/dependencies/auto_merge_deps.yml
+      #   dest: .github/workflows/auto_merge_deps.yml
       - source: configs/dependabot.yml
         dest: .github/dependabot.yml
 
