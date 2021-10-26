@@ -28,6 +28,8 @@ group:
     # LICENSE
       - source: LICENSE
         dest: LICENSE
+      - source: .gitignore
+        dest: .gitignore
     repos: |
         benjivesterby/hammer
         devnw/alog
