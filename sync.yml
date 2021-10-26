@@ -48,6 +48,15 @@ group:
         devnw/synapse
         devnw/scheduler
         devnw/atominer
+        egis-ai/gcp
+        egis-ai/qualys
+        egis-ai/jira
+        egis-ai/azure
+        egis-ai/insightvm
+        egis-ai/nexpose
+        egis-ai/nvd
+        egis-ai/aws
+        egis-ai/dome9
 
 # LINT CONFIG (DEFAULT)
   - files:
