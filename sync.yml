@@ -88,7 +88,7 @@ group:
     repos: |
         devnw/bridgekeeper
 
-  -files:
+  - files:
       - source: configs/CODEOWNERS
         dest: .github/CODEOWNERS
 
@@ -116,7 +116,7 @@ group:
         devnw/scheduler
         devnw/atominer
 
-  -files:
+  - files:
       - source: configs/egis_CODEOWNERS
         dest: .github/CODEOWNERS
     repos: |
