@@ -28,7 +28,8 @@ group:
     # LICENSE
       - source: LICENSE
         dest: LICENSE
-      - source: .gitignore
+
+      - source: configs/.gitignore
         dest: .gitignore
     repos: |
         benjivesterby/hammer
