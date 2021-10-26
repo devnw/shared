@@ -7,15 +7,9 @@ group:
       - source: configs/dependabot.yml
         dest: .github/dependabot.yml
 
-    # GitHub Sponsors config
-      - source: configs/FUNDING.yml
-        dest: .github/FUNDING.yml
-
     # GitHub OWNERS & COC
       - source: configs/CODE_OF_CONDUCT.md
         dest: .github/CODE_OF_CONDUCT.md
-      - source: configs/CODEOWNERS
-        dest: .github/CODEOWNERS
 
     # Github Releases
       - source: workflows/release/release.yml
@@ -35,6 +29,7 @@ group:
       - source: LICENSE
         dest: LICENSE
     repos: |
+        benjivesterby/hammer
         devnw/alog
         devnw/validator
         devnw/bridgekeeper
@@ -76,6 +71,15 @@ group:
         devnw/synapse
         devnw/scheduler
         devnw/atominer
+        egis-ai/gcp
+        egis-ai/qualys
+        egis-ai/jira
+        egis-ai/azure
+        egis-ai/insightvm
+        egis-ai/nexpose
+        egis-ai/nvd
+        egis-ai/aws
+        egis-ai/dome9
 
 # LINT CONFIG (LESS STRICT)
   - files:
@@ -83,3 +87,45 @@ group:
         dest: .golangci.yml
     repos: |
         devnw/bridgekeeper
+
+  -files:
+      - source: configs/CODEOWNERS
+        dest: .github/CODEOWNERS
+
+    # GitHub Sponsors config
+      - source: configs/FUNDING.yml
+        dest: .github/FUNDING.yml
+    repos: |
+        benjivesterby/hammer
+        devnw/alog
+        devnw/validator
+        devnw/bridgekeeper
+        devnw/ttl
+        devnw/oss-template
+        devnw/graph
+        devnw/graph-cli
+        devnw/syncer
+        devnw/atomizer
+        devnw/amqp
+        devnw/montecarlopi
+        devnw/atomizer-test-console
+        devnw/atomizer-test-agent
+        devnw/atomizer-cmd
+        devnw/atomizer-base
+        devnw/synapse
+        devnw/scheduler
+        devnw/atominer
+
+  -files:
+      - source: configs/egis_CODEOWNERS
+        dest: .github/CODEOWNERS
+    repos: |
+        egis-ai/gcp
+        egis-ai/qualys
+        egis-ai/jira
+        egis-ai/azure
+        egis-ai/insightvm
+        egis-ai/nexpose
+        egis-ai/nvd
+        egis-ai/aws
+        egis-ai/dome9
