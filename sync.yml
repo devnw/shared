@@ -63,6 +63,7 @@ group:
       - source: configs/.golangci.yml
         dest: .golangci.yml
     repos: |
+        benjivesterby/hammer
         devnw/alog
         devnw/validator
         devnw/ttl
