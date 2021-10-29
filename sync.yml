@@ -32,7 +32,7 @@ group:
       - source: configs/.gitignore
         dest: .gitignore
 
-      - source: configs/pre-commit-config.yaml
+      - source: configs/.pre-commit-config.yaml
         dest: .pre-commit-config.yaml
     repos: |
         benjivesterby/hammer
