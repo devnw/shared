@@ -55,6 +55,7 @@ group:
         devnw/scheduler
         devnw/atominer
         devnw/plex
+        devnw/ctx
         egis-ai/gcp
         egis-ai/qualys
         egis-ai/jira
@@ -89,6 +90,7 @@ group:
         devnw/scheduler
         devnw/atominer
         devnw/plex
+        devnw/ctx
         egis-ai/gcp
         egis-ai/qualys
         egis-ai/jira
@@ -134,6 +136,7 @@ group:
         devnw/scheduler
         devnw/atominer
         devnw/plex
+        devnw/ctx
 
   - files:
       - source: configs/egis_CODEOWNERS
