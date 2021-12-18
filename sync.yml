@@ -1,9 +1,6 @@
 group:
   # dependabot workflow
   - files:
-      # removing in place of automerge
-      # - source: workflows/dependencies/auto_merge_deps.yml
-      #   dest: .github/workflows/auto_merge_deps.yml
       - source: configs/dependabot.yml
         dest: .github/dependabot.yml
 
@@ -14,8 +11,6 @@ group:
     # Github Releases
       - source: workflows/release/release.yml
         dest: .github/workflows/release.yml
-      - source: configs/release-config.json
-        dest: release-config.json
 
     # Shared File Merging
       - source: workflows/other/automerge.yml
