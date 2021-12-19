@@ -11,7 +11,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@main
       - name: Run Repo File Sync Action
-        uses: BetaHuhn/repo-file-sync-action@v1.15.5
+        uses: BetaHuhn/repo-file-sync-action@develop
         with:
           GH_PAT: ${{ secrets.GH_PAT }}
           CONFIG_PATH: sync.yml
