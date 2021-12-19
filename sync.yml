@@ -4,10 +4,6 @@ group:
       - source: configs/dependabot.yml
         dest: .github/dependabot.yml
 
-    # GitHub OWNERS & COC
-      - source: configs/CODE_OF_CONDUCT.md
-        dest: .github/CODE_OF_CONDUCT.md
-
     # Github Releases
       - source: workflows/release/release.yml
         dest: .github/workflows/release.yml
@@ -108,10 +104,6 @@ group:
   - files:
       - source: configs/CODEOWNERS
         dest: .github/CODEOWNERS
-
-    # GitHub Sponsors config
-      - source: configs/FUNDING.yml
-        dest: .github/FUNDING.yml
     repos: |
         benjivesterby/hammer
         devnw/alog
