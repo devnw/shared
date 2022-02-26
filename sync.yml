@@ -1,15 +1,15 @@
 group:
   # dependabot workflow
   - files:
-      - source: configs/dependabot.yml
+      - source: .github/dependabot.yml
         dest: .github/dependabot.yml
 
     # Github Releases
-      - source: workflows/release/release.yml
+      - source: workflows/release.yml
         dest: .github/workflows/release.yml
 
     # Shared File Merging
-      - source: workflows/other/automerge.yml
+      - source: workflows/automerge.yml
         dest: .github/workflows/automerge.yml
 
     # Default GO lint/build workflows
@@ -20,10 +20,10 @@ group:
       - source: LICENSE
         dest: LICENSE
 
-      - source: configs/.gitignore
+      - source: .gitignore
         dest: .gitignore
 
-      - source: configs/.pre-commit-config.yaml
+      - source: .pre-commit-config.yaml
         dest: .pre-commit-config.yaml
     repos: |
         benjivesterby/hammer
@@ -48,19 +48,10 @@ group:
         devnw/plex
         devnw/ctx
         devnw/event
-        egis-ai/gcp
-        egis-ai/qualys
-        egis-ai/jira
-        egis-ai/azure
-        egis-ai/insightvm
-        egis-ai/nexpose
-        egis-ai/nvd
-        egis-ai/aws
-        egis-ai/dome9
 
 # LINT CONFIG (DEFAULT)
   - files:
-      - source: configs/.golangci.yml
+      - source: .golangci.yml
         dest: .golangci.yml
     repos: |
         benjivesterby/hammer
@@ -84,60 +75,10 @@ group:
         devnw/plex
         devnw/ctx
         devnw/event
-        egis-ai/gcp
-        egis-ai/qualys
-        egis-ai/jira
-        egis-ai/azure
-        egis-ai/insightvm
-        egis-ai/nexpose
-        egis-ai/nvd
-        egis-ai/aws
-        egis-ai/dome9
 
 # LINT CONFIG (LESS STRICT)
   - files:
-      - source: configs/less_strict_golangcilint.yml
+      - source: less_strict_golangcilint.yml
         dest: .golangci.yml
     repos: |
         devnw/bridgekeeper
-
-  - files:
-      - source: configs/CODEOWNERS
-        dest: .github/CODEOWNERS
-    repos: |
-        benjivesterby/hammer
-        devnw/alog
-        devnw/validator
-        devnw/bridgekeeper
-        devnw/ttl
-        devnw/oss-template
-        devnw/graph
-        devnw/graph-cli
-        devnw/syncer
-        devnw/atomizer
-        devnw/amqp
-        devnw/montecarlopi
-        devnw/atomizer-test-console
-        devnw/atomizer-test-agent
-        devnw/atomizer-cmd
-        devnw/atomizer-base
-        devnw/synapse
-        devnw/scheduler
-        devnw/atominer
-        devnw/plex
-        devnw/ctx
-        devnw/event
-
-  - files:
-      - source: configs/egis_CODEOWNERS
-        dest: .github/CODEOWNERS
-    repos: |
-        egis-ai/gcp
-        egis-ai/qualys
-        egis-ai/jira
-        egis-ai/azure
-        egis-ai/insightvm
-        egis-ai/nexpose
-        egis-ai/nvd
-        egis-ai/aws
-        egis-ai/dome9
