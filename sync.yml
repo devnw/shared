@@ -3,17 +3,8 @@ group:
   - files:
       - source: .github/dependabot.yml
         dest: .github/dependabot.yml
-
-    # Github Releases
-      - source: workflows/release.yml
-        dest: .github/workflows/release.yml
-
-    # Shared File Merging
-      - source: workflows/automerge.yml
-        dest: .github/workflows/automerge.yml
-
-    # Default GO lint/build workflows
-      - source: workflows/go/
+        
+      - source: .github/workflows/
         dest: .github/workflows/
 
     # LICENSE
