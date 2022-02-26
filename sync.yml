@@ -3,9 +3,11 @@ group:
   - files:
       - source: .github/dependabot.yml
         dest: .github/dependabot.yml
-        
+
       - source: .github/workflows/
         dest: .github/workflows/
+        exclude: |
+          sync.yml
 
     # LICENSE
       - source: LICENSE
